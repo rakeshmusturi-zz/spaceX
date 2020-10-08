@@ -1,0 +1,55 @@
+.DetailsDiv {
+    display: inline-block;
+    vertical-align: top;
+    width: 92%;
+    margin: 10px;
+    .productTile {
+        width: 93%;
+        display: inline-block;
+        background: #fff;
+        min-height: 400px;
+        margin: 0 7px 17px 7px;
+        padding: 10px;
+        vertical-align: inherit;
+        .imageBlock {
+            text-align: center;
+        }
+        h5 {
+            margin: 10px;
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+    .DetailsDiv {
+        width: 75%;
+        .productTile {
+            width: 44%;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .DetailsDiv {
+        display: inline-block;
+        vertical-align: top;
+        width: 79%;
+        margin: 10px;
+        .productTile {
+            width: 20%;
+            display: inline-block;
+            background: #fff;
+            min-height: 400px;
+            margin: 0 7px 17px 7px;
+            .imageBlock {
+                text-align: center;
+            }
+            h5 {
+                margin: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .DetailsDiv {
+        width: 80%;
+    }
+}
