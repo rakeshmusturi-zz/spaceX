@@ -22,7 +22,7 @@ class Details extends React.Component {
                                 })}
                             </ul>
                         </div>
-                            <h5>{`Launch year: `}<span style={{ color: "blue" }}>{data.launch_year}</span></h5>
+                            <h5>{`Launch Year: `}<span style={{ color: "blue" }}>{data.launch_year}</span></h5>
                             <h5>{'Sucessful Launch: '}<span style={{ color: "blue" }}>{data.launch_success.toString()}</span></h5>
                             <h5>{`Sucessful Landing: `}<span style={{ color: "blue" }}>{(data.rocket.first_stage.cores[0].land_success && data.rocket.first_stage.cores[0].land_success.toString()) || "false"}</span></h5>
                     </div>)
