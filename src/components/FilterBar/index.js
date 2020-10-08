@@ -27,29 +27,29 @@ class FilterBar extends React.Component {
         ];
         return (
         <div className={"FilterBarDiv"}>
-            <h3>Filter</h3>
+            <h2>Filter</h2>
             <div className="filterSec">
-                <h5>Launch Year</h5>
+                <h3>Launch Year</h3>
                 <hr />
             </div>
             <div>
-            {filterJson.map((i)=><div className={"buttonDiv"} onClick={()=>this.props.onFilterClick(i.id, "year")}><button style={year && (year.toString() === i.id.toString()) ? {background: "#0ca20cc7"} : {background: "#61de6178"}}>{i.id}</button></div>)}
+            {filterJson.map((i)=><div className={"buttonDiv"} ><button onClick={()=>this.props.onFilterClick(i.id, "year")} aria-label={i.id.toString()} style={year && (year.toString() === i.id.toString()) ? {background: "#0ca20cc7"} : {background: "#61de6178"}}>{i.id}</button></div>)}
             </div>
             <div className="filterSec">
-                <h5>Sucessful Launch</h5>
+                <h4>Sucessful Launch</h4>
                 <hr />
             </div>
             <div>
-                <div className={"buttonDiv"} onClick={()=>this.props.onFilterClick(true, "launch")}><button style={launch==='true' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>True</button></div>
-                <div className={"buttonDiv"} onClick={()=>this.props.onFilterClick(false, "launch")}><button style={launch==='false' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>False</button></div>
+                <div className={"buttonDiv"} ><button onClick={()=>this.props.onFilterClick(true, "launch")} aria-label={"true"} style={launch==='true' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>True</button></div>
+                <div className={"buttonDiv"} ><button onClick={()=>this.props.onFilterClick(false, "launch")} aria-label={"false"} style={launch==='false' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>False</button></div>
             </div>
             <div className="filterSec">
                 <h5>Sucessful Landing</h5>
                 <hr />
             </div>
             <div>
-                <div className={"buttonDiv"} onClick={()=>this.props.onFilterClick(true, "land")}><button style={land === 'true' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>True</button></div>
-                <div className={"buttonDiv"} onClick={()=>this.props.onFilterClick(false, "land")}><button style={land==='false' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>False</button></div>
+                <div className={"buttonDiv"} ><button onClick={()=>this.props.onFilterClick(true, "land")} aria-label={"true"} style={land === 'true' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>True</button></div>
+                <div className={"buttonDiv"} ><button onClick={()=>this.props.onFilterClick(false, "land")} aria-label={"false"} style={land==='false' ? {background: "#0ca20cc7"} : { background:"#61de6178" }}>False</button></div>
             </div>
         </div>
         )

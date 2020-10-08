@@ -4,7 +4,9 @@ import "./style.css";
 class Header extends React.Component {
     render() {
         return (
-        <div className={"headerDiv"}>{"SpaceX Launch Programs"}</div>
+        <header>
+            <h1 className={"headerDiv"}>{"SpaceX Launch Programs"}</h1>
+        </header>
         )
     }
     
